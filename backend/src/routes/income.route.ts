@@ -11,7 +11,8 @@ router
 router
   .route('/:id')
   .get(incomeController.getIncomeById)
-  .patch(incomeController.updateIncomeById, incomeController.removeIncomeById)
+  .post(incomeController.removeIncomeById)
+  .patch(incomeController.updateIncomeById)
   .delete(incomeController.deleteIncomeById);
 
 export default router;

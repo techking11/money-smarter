@@ -1,5 +1,7 @@
-export interface IIncome {
+import { Document } from 'mongoose';
+
+export interface IIncome extends Document {
   name: string;
   cost: number;
-  is_deleted?: boolean;
+  isDeleted?: boolean;
 }
